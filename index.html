@@ -26,20 +26,17 @@
       <div class="fading-line"></div>
     </div>
     <section id="header" class="page ">
-<!--      <div class="container">-->
         <div class=" text-center ">
-          <div class="row">
-            <div class="col-lg-12 padding_right_30">
-<!--              <h1 class="animated hiding" data-animation="fadeInDown" data-delay="300">We Are Merlin</h1>-->
-      <a href="index.html" class="col-lg-3 col-md-4 col-sm-5 col-xs-8"><img src="assets/img/logo.png" class="img-responsive" /></a>
-        <a href="google.com" class="col-lg-2 col-lg-push-7 col-lg-offset-0 col-md-offset-5 col-md-3 btn btn-success btn-lg margin_top_20 ">Заказать</a>
-       <div class="col-lg-7 col-lg-pull-2 col-md-12  text-center font_size_32 margin_top_20">
+          <div class="row margin_fix">
+            <div class="col-lg-12 padding_right_30 margin_top_5">
+      <a href="index.html" class="col-lg-3 col-md-3 col-sm-5 col-xs-8 "><img src="assets/img/logo.png" class="img-responsive max_height_60" /></a>
+        <a href="http://google.com" class="col-lg-2 col-lg-push-7 col-lg-offset-0 col-md-offset-5 col-xs-3 btn btn-success btn-lg margin_top_10">Заказать</a>
+       <div class="col-lg-7 col-lg-pull-2 col-xs-12 margin_top_5 text-center font_size_32">
        <span class="col-lg-6 col-md-6 col-sm-6 col-xs-12">067 281 44 44</span>
        <span class="col-lg-6 col-md-6 col-sm-6 col-xs-12">067 281 44 44</span>
        </div>
             </div>
           </div>
-<!--        </div>-->
       </div>
     </section>
     <section id="home" class="page">
@@ -53,36 +50,33 @@
         </div>
       </div>
     </section>
-        <div id="navbar-top"><!-- navbar-top -->
+        <div id="navbar-top" class="hidden-xs">
       <nav class="navbar navbar-default" role="navigation">
           <div class="navbar-header">
+<!--
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+-->
           </div>
-          <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav margin_top_5 margin_right_20">
-              <li class="active">
+          <div class="collapse navbar-collapse ">
+            <ul class="nav navbar-nav margin_top_5 margin_right_20 col-xs-10">
+              <li class="active col-xs-offset-2 col-xs-2 text-center">
                 <a href="#header">Главная</a>
               </li>
-              <li>
+              <li class="col-xs-2  text-center">
                 <a href="#services">Тарифы</a>
               </li>
-              <li>
+              <li class="col-xs-2 text-center">
                 <a href="#comments">Отзывы</a>
               </li>
-              <li>
+              <li class="col-xs-2  text-center">
                 <a href="#about">О службе</a>
               </li>
-<!--
-              <li>
-                <a href="#about">Контакты</a>
-              </li>
--->
-              <li>
+              <li class="col-xs-2 text-center">
                 <a href="#contacts">Контакты</a>
               </li>
             </ul>
@@ -90,15 +84,26 @@
       </nav>
     </div>
     <section id="services" class="page">
-        <div class="content text-center">
+        <div class="content text-center ">
           <div class="heading">
             <h2>Тарифы</h2>
           </div>
           <div class="row">
 	<div id="slider">
-		<div class="slide"><img src="assets/img/Toyota_Camry_US_SE_2012_360_720_50-33.png" alt="Image Description"></div>
-		<div class="slide"><img src="images/02.jpg" alt="Image Description"></div>
-		<div class="slide"><img src="images/03.jpg" alt="Image Description"></div>
+		<div class="slide"><img class="img-responsive center-block margin_vertical_30" src="assets/img/Toyota_Camry_US_SE_2012_360_720_50-33.png" alt="Image Description">
+		<div class="alert car_price col-xs-10 col-xs-offset-1" role="alert">...</div>
+		<div class="alert car_price col-xs-10 col-xs-offset-1" role="alert">...</div>
+		<div class="alert car_price col-xs-10 col-xs-offset-1" role="alert">...</div>
+		
+		</div>
+		<div class="slide"><img class="img-responsive center-block" src="assets/img/Toyota_Camry_US_SE_2012_360_720_50-33.png" alt="Image Description">
+		<div class="alert alert-warning col-xs-10 col-xs-offset-1" role="alert">...</div>
+		<div class="alert alert-warning col-xs-10 col-xs-offset-1" role="alert">...</div>
+		<div class="alert alert-warning col-xs-10 col-xs-offset-1" role="alert">...</div>		</div>
+		<div class="slide"><img class="img-responsive center-block" src="assets/img/Toyota_Camry_US_SE_2012_360_720_50-33.png" alt="Image Description">
+		<div class="alert alert-warning col-xs-10 col-xs-offset-1" role="alert">...</div>
+		<div class="alert alert-warning col-xs-10 col-xs-offset-1" role="alert">...</div>
+		<div class="alert alert-warning col-xs-10 col-xs-offset-1" role="alert">...</div>		</div>
 	</div>
           </div>
         </div>
@@ -121,9 +126,16 @@
         <div class="content text-center">
           <div class="heading">
             <h2>О службе</h2>
-
-          </div>
-          <div class="row">
+          </div> 
+          <div class="row col-md-12 font_size_18 padding_gorizontal_15 animated hiding" data-animation="fadeInDown">
+          <p>     Не знаю почему, но в преддверие Нового года у обоих полов обостряется чувство холостяцкой горечи, если они одни. Чего только не придумывают мужики, чтоб отпраздновать Новый год с кем-то. О чем я недавно узнал, слушая разговор своей пассажирки за своей спиной.
+Ей чуть больше 20-ти. Худенькая блондинка, судя по разговору с Востока. Всю дорогу у нее звонил телефон, время от времени она говорила подружке: «Повиси на линии». Спустя минуту-две она рассказывала в красках куда ее приглашал тот или иной вариант (мужчин, она почему-то называет вариантами) и что предлагает каждый.
+Как оказалось, я вез ее к варианту номер 2. Двоим другим претендентам она рассказывала одну и ту же легенду, что договорилась с друзьями, но есть минимальная возможность встретить Новый год с ним. Таким образом, трое мужиков (как минимум) до последнего будут рассчитывать на ее общество и останутся ни с чем.
+Но, что самое уникальное, выбор одного «счастливчика» из четырех, во многом полагался на сердце и интуицию подружки, которая ни одного из претендентов никогда не видела!
+Надеюсь, все главные герои встретят Новый год весело и никогда не пожалеют о своем обществе!
+You can start editing here. If comments are closed.
+Обсуждение закрыто.
+</p>
           </div>
         </div>
     </section>
@@ -133,7 +145,9 @@
             <h2>Контакты</h2>
 
           </div>
-          <div class="row">
+          <div class="row margin_fix padding_fix">
+           <div class="map col-md-12 col-sm-12 col-xs-12" id="map-canvas">
+            </div>
           </div>
         </div>
     </section>
@@ -192,16 +206,9 @@
     <script src="assets/js/jquery.appear.min.js"></script>
     <script src="assets/js/twitterFetcher.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/holder.js"></script>
-      <script>
-      $(document).ready(function(){
-          $("#slider").owlCarousel({
-          navigation : true, // Show next and prev buttons
-          slideSpeed : 300,
-          paginationSpeed : 400,
-          singleItem:true
-    });
-});
-      </script>      
+<!--    <script src="assets/js/holder.js"></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="assets/js/gmaps.js"></script>
+    <script src="assets/js/slider.js"></script>      
   </body>
 </html>
