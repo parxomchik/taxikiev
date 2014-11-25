@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+
   
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
@@ -92,7 +95,11 @@
             <h2>Тарифы</h2>
           </div>
           <div class="row">
-
+	<div id="slider">
+		<div class="slide"><img src="assets/img/Toyota_Camry_US_SE_2012_360_720_50-33.png" alt="Image Description"></div>
+		<div class="slide"><img src="images/02.jpg" alt="Image Description"></div>
+		<div class="slide"><img src="images/03.jpg" alt="Image Description"></div>
+	</div>
           </div>
         </div>
     </section>
@@ -175,7 +182,8 @@
                 <hr class="margin_top_10 margin_bottom_10">
     </footer>
 
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/imagesloaded.min.js"></script>
@@ -185,6 +193,15 @@
     <script src="assets/js/twitterFetcher.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/holder.js"></script>
-            
+      <script>
+      $(document).ready(function(){
+          $("#slider").owlCarousel({
+          navigation : true, // Show next and prev buttons
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          singleItem:true
+    });
+});
+      </script>      
   </body>
 </html>
