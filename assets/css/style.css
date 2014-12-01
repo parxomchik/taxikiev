@@ -524,3 +524,8 @@ a:focus {
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #fec500;
 }
+@media (max-width: 767px /* @screen-xs-max */) {
+#order_btn {
+    
+}
+}
