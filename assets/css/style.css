@@ -6,7 +6,6 @@ By: Dmitriy Parkhomenko, Dmitriy.Parkhomenko@icloud.com
 */
 body {
   font-family: 'Source Sans Pro', sans-serif;
-/*  color: #444;*/
 }
 h1,
 h2,
@@ -169,8 +168,7 @@ a:focus {
   margin-bottom: 0;
 }
 #services {
-/*  background-color: #f5f5f5;*/
-/*  border-bottom: solid 1px #e7e7e7;*/
+
 }
 #services .service i { margin-top: 60px }
 #services .service:hover i { color: #71be3c }
@@ -182,54 +180,6 @@ a:focus {
   font-weight: 600;
   text-transform: uppercase;
 }
-/*
-#portfolio .filters li a:hover,
-#portfolio .filters li a:focus { color: #333 }
-#portfolio .filters li a.active { color: #0093cf }
-#portfolio .items { margin-bottom: 0 }
-#portfolio .items li {
-  position: relative;
-  float: left;
-  width: 25%;
-  overflow: hidden;
-}
-#portfolio .items li a img {
-  width: 100%;
-  -webkit-transition: all 0.3s ease-in-out;
-     -moz-transition: all 0.3s ease-in-out;
-       -o-transition: all 0.3s ease-in-out;
-          transition: all 0.3s ease-in-out;
-}
-#portfolio .items li a .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  background-color: rgba(0,0,0,0.6);
-  -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-         transition: all 0.3s ease-in-out;
-  opacity: 0;
-}
-#portfolio .items li a .overlay span {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  color: #fff;
-  text-transform: uppercase;
-}
-#portfolio .items li a:hover .overlay { opacity: 1 }
-#portfolio .items li a:hover img {
-  -webkit-transform: scale(1.1);
-     -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-       -o-transform: scale(1.1);
-          transform: scale(1.1);
-}
-*/
 #clients {
   color: #fff;
   background-color: #2a3940;
@@ -339,26 +289,14 @@ a:focus {
 #footer {
   padding: 20px 0 10px 0;
   color: #fff;
-/*  text-align: center;*/
   background-color: #292929;
 }
 #footer a,
 #footer a:hover,
 #footer a:focus { color: #fff }
 #footer .social { 
-/*    margin-bottom: 20px;*/
     margin-left: 15px;
 }
-/*
-#footer .social li .facebook:hover,
-#footer .social li .facebook:focus { color: #3b5998 }
-#footer .social li .twitter:hover,
-#footer .social li .twitter:focus { color: #00aced }
-#footer .social li .google-plus:hover,
-#footer .social li .google-plus:focus { color: #d34836 }
-#footer .social li .dribbble:hover,
-#footer .social li .dribbble:focus { color: #ea4c89 }
-*/
 #footer .copyright { 
     margin-bottom: 0;
     margin-top: 5px;
@@ -381,19 +319,6 @@ a:focus {
   #portfolio .items li { width: 100% }
   #testimonials .quote { padding: 0 30px }
 }
-
-/*
-.navbar-brand:before{
-	 display: block;
-	 float: left;
-	 content: '';
-	 background: url(../img/logo2.png) no-repeat;
-	 width: 3em;
-	 height: 3em;
-	 margin-right: .5em;
-     margin-top: -22px;
-}
-*/
 .margin_top_5 {
     margin-top: 5px;
 }
@@ -440,7 +365,6 @@ a:focus {
 .navbar-toggle {
     margin-right: 50px;
 }
-
 .service img{
     border-radius: 50%;
 }
@@ -463,7 +387,7 @@ a:focus {
     padding: 0 4%;
 }
 #map-canvas {
-        height: 500px;
+        height: 450px;
         margin: 0px;
         padding: 0px;
       }
@@ -476,6 +400,7 @@ a:focus {
     max-height: 60px;
 }
 #order_btn {
+    background: #1ad923;
 }
 .price_btn {
     padding: 6px 12px;
@@ -515,12 +440,22 @@ a:focus {
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #fec500;
 }
+.font_size_20 {
+    font-size: 20px;
+}
+
+
 @media (max-width: 767px /* @screen-xs-max */) {
+    h2{
+        font-size:24px;
+    }
+    h3{
+        font-size:20px;
+    }
 #order_btn {
      width: 68px;
      height: 68px;
      margin-top: 4px;
-/*     padding: 20px 10px; */
      border-radius: 10px;
      margin-left: 5px;
      padding: 0;
@@ -537,6 +472,9 @@ a:focus {
 }
     .price_btn{
        padding: 0; 
+       font-size: 12px;
+       height: 45px;
+       width: 80px;
     }
     #logo{
         height: 100px;
@@ -546,4 +484,19 @@ a:focus {
     #logo_wraper{
         height: 60px;
     }
+    #about p {
+        font-size:14px;
+    }
+    .car_price{
+        padding: 10px;
+    }
+    #map-canvas{
+        height: 300px;
+    }
+    #slider img{
+        max-width: 320px;
+    }
+    #services .heading h2 {
+    margin-bottom: 0;
+}
 }

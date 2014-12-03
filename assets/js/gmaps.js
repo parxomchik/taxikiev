@@ -8,9 +8,23 @@ function initialize() {
     zoom: 15,
     center: druzya,
     draggable:true,
-    scrollwheel:false  
+    scrollwheel:false,
+    zoomControl: false,
+    mapTypeControl: false,
+    streetViewControl: false,
+    scaleControl: false,
+    panControl: false
   };
 
+function enableScrollwheel(map) {
+    if(map) map.setOptions({ scrollwheel: true });
+}
+
+function disableScrollwheel(map) {
+    if(map) map.setOptions({ scrollwheel: false });
+}
+    
+    
   map = new google.maps.Map(document.getElementById('map-canvas'),
           mapOptions);
 
@@ -22,7 +36,7 @@ function initialize() {
     
   marker = new google.maps.Marker({
     map:map,
-    draggable:true,
+    draggable:false,
     icon: logoDruzya,
     animation: google.maps.Animation.DROP,
     position: parliament
