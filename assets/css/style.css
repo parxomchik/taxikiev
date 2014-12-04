@@ -403,7 +403,8 @@ a:focus {
     background: #1ad923;
 }
 .price_btn {
-    padding: 6px 12px;
+/*    padding: 6px 12px;*/
+    padding-top: 14px;
     margin-bottom: 0;
     font-size: 14px;
     font-weight: 500;
@@ -443,7 +444,9 @@ a:focus {
 .font_size_20 {
     font-size: 20px;
 }
-
+.z_index_9998{
+    z-index: 9998;
+}
 
 @media (max-width: 767px /* @screen-xs-max */) {
     h2{
