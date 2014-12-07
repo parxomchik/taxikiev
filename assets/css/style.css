@@ -438,6 +438,10 @@ a:focus {
     background: #fec500;
     color: #fff;
 }
+.price_active {
+    background: #fec500;
+    color: #fff;  
+}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #fec500;
 }
@@ -474,10 +478,10 @@ a:focus {
      margin-top: .2em;
 }
     .price_btn{
-       padding: 0; 
+       padding: 12px 3px; 
        font-size: 12px;
        height: 45px;
-       width: 80px;
+       width: 90px;
     }
     #logo{
         height: 100px;

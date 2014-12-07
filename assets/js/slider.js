@@ -4,6 +4,7 @@ $(document).ready(function() {
  
   owl.owlCarousel({
       items : 3, //10 items above 1000px browser width
+      pagination:  false,
       singleItem:true,
       slideSpeed : 300,
       paginationSpeed : 400
