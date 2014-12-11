@@ -7,7 +7,7 @@ function initialize() {
   var mapOptions = {
     zoom: 15,
     center: druzya,
-    draggable:true,
+    draggable:false,
     scrollwheel:false,
     zoomControl: false,
     mapTypeControl: false,
