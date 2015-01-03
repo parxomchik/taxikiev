@@ -451,7 +451,9 @@ a:focus {
 .z_index_9998{
     z-index: 9998;
 }
-
+#disqus_thread{
+    max-height: 490px;
+}
 @media (max-width: 767px /* @screen-xs-max */) {
     h2{
         font-size:24px;
