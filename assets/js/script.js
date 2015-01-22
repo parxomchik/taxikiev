@@ -106,3 +106,14 @@ function handleTweets(tweets) {
         element.innerHTML = html;
     }
 }
+
+    function show_phone_number(){
+//    alert('scroll');
+if ($('.navbar ').hasClass('affix')) {
+    $('#taxi-phone').css("display","block");
+} else {
+    $('#taxi-phone').css("display","none");
+}
+};
+$(document).ready(show_phone_number);
+$( window ).scroll(show_phone_number);

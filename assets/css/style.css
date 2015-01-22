@@ -385,15 +385,38 @@ a:focus {
 .padding_fix{
     padding: 0;
 }
+.menu_tel {
+    padding: 10px 0 0 0;
+}
 .font_size_32 {
     font-size: 32px;
 }
 .font_size_18 {
     font-size: 18px;
 }
+.font_size_20 {
+    font-size: 20px;
+}
+.navbar-nav>li .font_size_24{
+    color: #000;
+}
 .padding_gorizontal_15 {
     padding: 0 4%;
 }
+#taxi-phone{
+    display: none;
+}
+.phone:before{
+	 display: block;
+	 float: left;
+	 content: '';
+	 background: url(../img/phone.png) no-repeat;
+	 width: 25px;
+	 height: 25px;
+	 margin-left: 20%;
+	 margin-top: 2px;
+}
+
 #map-canvas {
         height: 450px;
         margin: 0px;
