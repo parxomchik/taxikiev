@@ -1,5 +1,5 @@
-var druzya = new google.maps.LatLng(50.456611, 30.604692);
-var parliament = new google.maps.LatLng(50.456611, 30.604692);
+var druzya = new google.maps.LatLng(50.4388667, 30.5230665);
+var parliament = new google.maps.LatLng(50.4388667, 30.5230665);
 var marker;
 var map;
 

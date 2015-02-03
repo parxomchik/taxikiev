@@ -157,7 +157,7 @@ a:focus {
 #home {
   padding: 0;
   color: #fff;
-  background-image: url(../img/cover/kiev-taxi.png);
+  background-image: url(../img/cover/kiev-taxi.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -323,6 +323,9 @@ a:focus {
   .page .content.cover { padding: 80px 0 }
   #portfolio .items li { width: 100% }
   #testimonials .quote { padding: 0 30px }
+  .font_size_price {
+    font-size: 16px;
+   }
 }
 .margin_top_5 {
     margin-top: 5px;
@@ -396,12 +399,20 @@ a:focus {
 }
 .font_size_20 {
     font-size: 20px;
+    font-weight: 300;
+}
+.font_size_price {
+    font-size: 20px;
+    font-weight: 300;
 }
 .navbar-nav>li .font_size_24{
     color: #000;
 }
 .padding_gorizontal_15 {
     padding: 0 4%;
+}
+.padding_price {
+    padding: 0 5%;
 }
 #taxi-phone{
     display: none;
@@ -415,6 +426,20 @@ a:focus {
 	 height: 25px;
 	 margin-left: 20%;
 	 margin-top: 2px;
+}
+.price_tarif li {
+    padding-left: 50px;
+}
+.price_tarif li:before{
+	 display: block;
+	 float: left;
+	 content: '';
+	 background: url(../img/ok.jpg) no-repeat;
+	 width: 25px;
+	 height: 20px;
+/*    padding-right: 15px;*/
+	 margin-right: 5px;
+/*	 margin-top: 2px;*/
 }
 
 #map-canvas {
@@ -497,6 +522,9 @@ a:focus {
     max-height: 490px;
 }
 @media (max-width: 767px /* @screen-xs-max */) {
+    .font_size_price {
+        font-size: 14px;
+    }
     h2{
         font-size:24px;
     }
