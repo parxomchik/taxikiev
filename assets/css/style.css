@@ -1,13 +1,9 @@
 /*
-
 Web-solutions 
 Version 1.0
 By: Dmitriy Parkhomenko, Dmitriy.Parkhomenko@icloud.com
 */
-body {
-/*  font-family: 'Lora' ;*/
-    
-/*    @import url(http://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic);*/
+body {    
     @import url(http://fonts.googleapis.com/css?family=Didact+Gothic&subset=latin,cyrillic);
     font-family: 'Didact Gothic', sans-serif;
     font-weight: 200;
@@ -18,7 +14,6 @@ h3,
 h4,
 h5,
 h6 { font-weight: 300 }
-*,
 *:focus { outline: none !important }
 a { color: #2d2d2d }
 a:hover,
@@ -48,7 +43,7 @@ a:focus {
 .btn-home {
   color: #fff;
   border: 2px solid #fff;   
-/*  background-color: #0093cf;*/
+  background-color: #0093cf;
     opacity: 0.7;
     border-radius: 2px;
     padding: 12px 30px;
@@ -74,15 +69,6 @@ a:focus {
 }
 .btn-green:hover,
 .btn-green:focus {
-  color: #fff;
-  background-color: #2a3940;
-}
-.btn-dark {
-  color: #fff;
-  background-color: #2a3940;
-}
-.btn-dark:hover,
-.btn-dark:focus {
   color: #fff;
   background-color: #2a3940;
 }
@@ -172,125 +158,6 @@ a:focus {
   margin-top: 20px;
   margin-bottom: 0;
 }
-#services {
-
-}
-#services .service i { margin-top: 60px }
-#services .service:hover i { color: #71be3c }
-#work .heading p { margin-bottom: 60px }
-#portfolio { width: 100% }
-#portfolio .filters { margin-bottom: 20px }
-#portfolio .filters li a {
-  color: #999;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-#clients {
-  color: #fff;
-  background-color: #2a3940;
-}
-#testimonials .item { margin-bottom: 30px }
-#testimonials .quote {
-  padding: 0 90px;
-  font-size: 16px;
-}
-#testimonials .quote:before {
-  margin-right: 10px;
-  font-family: fontawesome;
-  content: '\f10d';
-}
-#testimonials .client { color: #ccc }
-#testimonials .carousel-indicators li {
-  width: 9px;
-  height: 9px;
-  border-color: #a6a6a6;
-  -webkit-border-radius: 2px;
-     -moz-border-radius: 2px;
-          border-radius: 2px;
-  -webkit-transition: all 0.25s linear;
-     -moz-transition: all 0.25s linear;
-       -o-transition: all 0.25s linear;
-          transition: all 0.25s linear;
-}
-#testimonials .carousel-indicators li:hover,
-#testimonials .carousel-indicators li:focus { border-color: #fff }
-#testimonials .carousel-indicators .active {
-  width: 9px;
-  height: 9px;
-  margin: 1px;
-  background-color: #71be3c;
-  border-color: #fff;
-}
-#testimonials .carousel-indicators {
-  bottom: 0;
-  margin-bottom: 0;
-}
-#testimonials .carousel-control {
-  top: 15%;
-  width: 0%;
-  display: none;
-  font-size: 40px;
-  background-image: none;
-  text-shadow: none;
-}
-#about .content { padding-bottom: 0 }
-#about .teammate { 
-  margin-top: 60px; 
-  margin-bottom: 60px; 
-}
-#about .teammate .bio { padding-top: 10px }
-#about .teammate .profile-photo {
-  overflow: hidden
-}     
-#about .teammate .profile-photo img {
-  -webkit-transition: all .4s ease;
-     -moz-transition: all .4s ease;
-      -ms-transition: all .4s ease;
-       -o-transition: all .4s ease;
-          transition: all .4s ease;
-}
-#about .teammate:hover .profile-photo img,
-#about .teammate:focus .profile-photo img {
-  -webkit-transform: scale(1.1);
-     -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-       -o-transform: scale(1.1);
-          transform: scale(1.1);
-}
-#about .teammate .bio .border {
-  height: 1px;
-  margin: 15px auto;
-}
-#about .teammate .bio ul {
-  margin-bottom: 0;
-  font-size: 16px;
-}
-#about .teammate .bio a { color: #666 }
-#about .teammate .bio a:hover,
-#about .teammate .bio a:focus { color: #222 }
-#about .twitter {
-  padding: 20px 0;
-  background-color: #f5f5f5;
-  border-top: solid 1px #e7e7e7;
-}
-#about .twitter p { margin-bottom: 0 }
-#about .twitter i {
-  margin-bottom: 10px;
-  color: #00aced;
-}
-#contact {
-  background: url(../img/cover/contact.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-#contact,
-#contact a,
-#contact a:hover,
-#contact a:focus { color: #fff }
-#contact .heading .border { background-color: #fff }
-#contact a { display: block }
-#contact i { margin: 60px 0 15px }
 #footer {
   padding: 20px 0 10px 0;
   color: #fff;
@@ -306,27 +173,7 @@ a:focus {
     margin-bottom: 0;
     margin-top: 5px;
 }
-/* Responsive style */
-@media screen and (max-width: 1024px) { 
-  #testimonials .carousel-control { display: block }
-}
-@media screen and (max-width: 991px) { 
-  #portfolio .items li { width: 50% }
-  #testimonials .quote { padding: 0 70px }
-}
-@media (max-width: 767px) { 
-  .page .content.cover { padding: 160px 0 }
-  #testimonials .quote { padding: 0 50px }
-  #testimonials .carousel-control.right { right: 10px }
-}
-@media (max-width: 480px) { 
-  .page .content.cover { padding: 80px 0 }
-  #portfolio .items li { width: 100% }
-  #testimonials .quote { padding: 0 30px }
-  .font_size_price {
-    font-size: 16px;
-   }
-}
+
 .margin_top_5 {
     margin-top: 5px;
 }
@@ -437,9 +284,7 @@ a:focus {
 	 background: url(../img/ok.jpg) no-repeat;
 	 width: 25px;
 	 height: 20px;
-/*    padding-right: 15px;*/
 	 margin-right: 5px;
-/*	 margin-top: 2px;*/
 }
 
 #map-canvas {
@@ -449,9 +294,7 @@ a:focus {
       }
 
 .car_price {
-/*    background-color: #fec500;*/
-/*    color: #fff;*/
-/*    background: #f7b926;*/
+
     border: 2.5px solid transparent;
     border-radius: 50px;
     padding: 15px;
@@ -470,7 +313,6 @@ a:focus {
     background: #1ad923;
 }
 .price_btn {
-/*    padding: 6px 12px;*/
     padding-top: 14px;
     margin-bottom: 0;
     font-size: 14px;
@@ -520,62 +362,4 @@ a:focus {
 }
 #disqus_thread{
     max-height: 490px;
-}
-@media (max-width: 767px /* @screen-xs-max */) {
-    .font_size_price {
-        font-size: 14px;
-    }
-    h2{
-        font-size:24px;
-    }
-    h3{
-        font-size:20px;
-    }
-#order_btn {
-     width: 68px;
-     height: 68px;
-     margin-top: 4px;
-     border-radius: 10px;
-     margin-left: 5px;
-     padding: 0;
-}
-#order_btn:before {
-     display: block;
-	 float: left;
-	 content: '';
-	 background: url(../img/call.png) no-repeat;
-	 width: 5em;
-	 height: 5em;
-	 margin-left: .3em;
-     margin-top: .2em;
-}
-    .price_btn{
-       padding: 12px 3px; 
-       font-size: 12px;
-       height: 45px;
-       width: 90px;
-    }
-    #logo{
-        height: 100px;
-        width: 280px;
-        margin-top: 10px; 
-    }
-    #logo_wraper{
-        height: 60px;
-    }
-    #about p {
-        font-size:14px;
-    }
-    .car_price{
-        padding: 10px;
-    }
-    #map-canvas{
-        height: 300px;
-    }
-    #slider img{
-        max-width: 320px;
-    }
-    #services .heading h2 {
-    margin-bottom: 0;
-}
 }

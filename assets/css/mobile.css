@@ -1,0 +1,86 @@
+/* Responsive style */
+@media screen and (max-width: 1024px) { 
+  #testimonials .carousel-control { display: block }
+}
+@media screen and (max-width: 991px) { 
+  #portfolio .items li { width: 50% }
+  #testimonials .quote { padding: 0 70px }
+}
+@media (max-width: 767px) { 
+  .page .content.cover { padding: 160px 0 }
+  #testimonials .quote { padding: 0 50px }
+  #testimonials .carousel-control.right { right: 10px }
+}
+@media (max-width: 480px) { 
+  .page .content.cover { padding: 80px 0 }
+  #portfolio .items li { width: 100% }
+  #testimonials .quote { padding: 0 30px }
+  .font_size_price {
+    font-size: 16px;
+   }
+}
+@media (max-width: 767px /* @screen-xs-max */) {
+    .price_tarif li {
+    padding-left: 0px;
+}
+    .font_size_price {
+        font-size: 14px;
+    }
+    h2{
+        font-size:24px;
+    }
+    h3{
+        font-size:20px;
+    }
+#order_btn {
+     width: 68px;
+     height: 68px;
+     margin-top: 4px;
+     border-radius: 10px;
+     margin-left: 5px;
+     padding: 0;
+}
+#order_btn:before {
+     display: block;
+	 float: left;
+	 content: '';
+	 background: url(../img/call.png) no-repeat;
+	 width: 5em;
+	 height: 5em;
+	 margin-left: .3em;
+     margin-top: .2em;
+}
+    .price_btn{
+       padding: 12px 3px; 
+       font-size: 12px;
+       height: 45px;
+       width: 90px;
+    }
+    #logo{
+        height: 100px;
+        width: 280px;
+        margin-top: 10px; 
+    }
+    #logo_wraper{
+        height: 60px;
+    }
+    #about p {
+        font-size:14px;
+    }
+    .car_price{
+        padding: 10px;
+    }
+    #map-canvas{
+        height: 300px;
+    }
+    #slider img{
+        max-width: 320px;
+    }
+    #services .heading h2 {
+    margin-bottom: 0;
+}
+    #home {
+    background-image: url(../img/cover/kiev-taxi_mobile.jpg);
+    min-height: 250px;    
+}
+}
