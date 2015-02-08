@@ -1,0 +1,365 @@
+/*
+Web-solutions 
+Version 1.0
+By: Dmitriy Parkhomenko, Dmitriy.Parkhomenko@icloud.com
+*/
+body {    
+    @import url(http://fonts.googleapis.com/css?family=Didact+Gothic&subset=latin,cyrillic);
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 200;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-weight: 300 }
+*:focus { outline: none !important }
+a { color: #2d2d2d }
+a:hover,
+a:focus {
+  color: #0c86b6;
+  text-decoration: none;
+}
+.hiding { opacity: 0 }
+.showing { opacity: 1 }
+.img-rounded {
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+}
+.btn {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+      -ms-transition: all .2s;
+          transition: all .2s;
+}
+.btn-home {
+  color: #fff;
+  border: 2px solid #fff;   
+  background-color: #0093cf;
+    opacity: 0.7;
+    border-radius: 2px;
+    padding: 12px 30px;
+}
+.btn-home:hover,
+.btn-home:focus {
+  color: #fff;
+  opacity: 1;
+}
+#price-btn {
+    background: #edc047;
+    color: #fff;
+    padding: 12px 30px;
+
+}
+.btn-price:hover
+.btn-price:focus{
+    color: #fff;
+}
+.btn-green {
+  color: #fff;
+  background-color: #71be3c;
+}
+.btn-green:hover,
+.btn-green:focus {
+  color: #fff;
+  background-color: #2a3940;
+}
+.loader {
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.fading-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  background-image: url(../img/fading-line.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#navbar-top { min-height: 51px }
+.navbar-default {
+  margin-bottom: 0;
+  background-color: #fff;
+  border-top: 0;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+.navbar-default .navbar-brand {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #0093cf;
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle { border-color: transparent }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { background-color: transparent }
+.navbar-default .navbar-toggle:hover .icon-bar { background-color: #333 }
+.navbar-default.affix {
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  border-bottom-color: transparent;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+     -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+          box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+}
+.page { overflow: hidden }
+.page .content { padding: 20px 0 }
+.page .content.cover { padding: 240px 0 }
+.page .heading h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.page .border {
+  width: 80px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #71be3c;
+}
+.page .heading p { margin: 20px auto 0 }
+#home {
+  padding: 0;
+  color: #fff;
+  background-image: url(../img/cover/kiev-taxi.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#home h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+#home a { margin: 0 5px }
+#home h3 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+#footer {
+  padding: 20px 0 10px 0;
+  color: #fff;
+  background-color: #292929;
+}
+#footer a,
+#footer a:hover,
+#footer a:focus { color: #fff }
+#footer .social { 
+    margin-left: 15px;
+}
+#footer .copyright { 
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.margin_top_5 {
+    margin-top: 5px;
+}
+.margin_top_10{
+    margin-top: 10px;
+}
+.margin_top_15{
+    margin-top: 15px;
+}
+.margin_top_20 {
+    margin-top: 20px;
+}
+.margin_top_50{
+    margin-top: 50px;
+}
+.margin_top_30{
+    margin-top: 30px;
+}
+.margin_top_fix {
+    margin-top: 0;
+}
+.margin_bottom_10 {
+    margin-bottom: 10px;
+}
+.margin_vertical_30{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.margin_left_6 {
+    margin-left: 6%;
+}
+.margin_fix{
+    margin:0;
+}
+.padding_bottom_0{
+    padding-bottom: 0;
+}
+.paddong_top_10 {
+    padding-top: 10px;
+}
+.padding_right_20{
+    padding-right: 20px;
+}
+.padding_right_30{
+    padding-right: 30px;
+}
+.navbar-toggle {
+    margin-right: 50px;
+}
+.service img{
+    border-radius: 50%;
+}
+.border_fix {
+    border: none;
+}
+.navbar-nav.navbar-right:last-child {
+    margin-right: 20px;
+}
+.padding_fix{
+    padding: 0;
+}
+.menu_tel {
+    padding: 10px 0 0 0;
+}
+.font_size_32 {
+    font-size: 32px;
+}
+.font_size_18 {
+    font-size: 18px;
+}
+.font_size_20 {
+    font-size: 20px;
+    font-weight: 300;
+}
+.font_size_price {
+    font-size: 20px;
+    font-weight: 300;
+}
+.navbar-nav>li .font_size_24{
+    color: #000;
+}
+.padding_gorizontal_15 {
+    padding: 0 4%;
+}
+.padding_price {
+    padding: 0 5%;
+}
+#taxi-phone{
+    display: none;
+}
+.phone:before{
+	 display: block;
+	 float: left;
+	 content: '';
+	 background: url(../img/phone.png) no-repeat;
+	 width: 25px;
+	 height: 25px;
+	 margin-left: 20%;
+	 margin-top: 2px;
+}
+.price_tarif li {
+    padding-left: 50px;
+}
+.price_tarif li:before{
+	 display: block;
+	 float: left;
+	 content: '';
+	 background: url(../img/ok.jpg) no-repeat;
+	 width: 25px;
+	 height: 20px;
+	 margin-right: 5px;
+}
+
+#map-canvas {
+        height: 450px;
+        margin: 0px;
+        padding: 0px;
+      }
+
+.car_price {
+
+    border: 2.5px solid transparent;
+    border-radius: 50px;
+    padding: 15px;
+    border-color:#fec500;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.popover top {
+    width: 500px;
+    height: 500px;
+}
+#logo {
+    max-height: 60px;
+}
+#order_btn {
+    background: #1ad923;
+}
+.price_btn {
+    padding-top: 14px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1.3px solid transparent;
+    border-radius: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+    display: block;  
+    margin: 1em auto;
+    height: 50px;
+    width: 180px;
+    border-color: #fec500;
+    background-color: #fff;
+}
+.price_btn:hover {
+    background: #fec500;
+    color: #fff;
+}
+.price_active {
+    background: #fec500;
+    color: #fff;  
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fec500;
+}
+.font_size_20 {
+    font-size: 20px;
+}
+.z_index_9998{
+    z-index: 9998;
+}
+#disqus_thread{
+    max-height: 490px;
+}

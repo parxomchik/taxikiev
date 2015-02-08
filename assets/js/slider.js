@@ -1,3 +1,16 @@
+$(window).on("load resize", function (e) {
+                 if ($(window).width() <= 600) {
+                    $(".item img").each(function () {
+                        $(this).attr("src", $(this).attr("src").replace("assets/img/cars/", "assets/img/cars_mobile/"));
+                    });
+                 } else {
+                    $(".item img").each(function () {
+                        $(this).attr("src", $(this).attr("src").replace("assets/img/cars_mobile/", "assets/img/cars/"));
+                    });
+                 }
+
+        });
+
 $(document).ready(function() {
  
   var owl = $("#owl-demo");
@@ -40,6 +53,68 @@ $(document).ready(function() {
   })
   $(".price_btn").click(function() {
     $(".price_btn").removeClass("price_active");
-    $(this).addClass("price_active");
+    $(this).addClass("price_active");    
   });
+    
+    var $btn2 = $('#btn2');
+$btn2.data('state', 'hover');
+
+var enterShow = function () {
+    if ($btn2.data('state') === 'hover') {
+        $btn2.popover('show');
+    }
+};
+var exitHide = function () {
+    if ($btn2.data('state') === 'hover') {
+        $btn2.popover('hide');
+    }
+};
+
+$btn2.popover({trigger: 'manual'})
+    .on('mouseenter', enterShow)
+    .on('mouseleave', exitHide)
+
+
+
+
+var $btn1 = $('#btn1');
+$btn1.data('state', 'hover');
+
+var enterShow = function () {
+    if ($btn1.data('state') === 'hover') {
+        $btn1.popover('show');
+    }
+};
+var exitHide = function () {
+    if ($btn1.data('state') === 'hover') {
+        $btn1.popover('hide');
+    }
+};
+
+$btn1.popover({trigger: 'manual'})
+    .on('mouseenter', enterShow)
+    .on('mouseleave', exitHide)
+
+
+
+
+var $btn3 = $('#btn3');
+$btn3.data('state', 'hover');
+
+var enterShow = function () {
+    if ($btn3.data('state') === 'hover') {
+        $btn3.popover('show');
+    }
+};
+var exitHide = function () {
+    if ($btn3.data('state') === 'hover') {
+        $btn3.popover('hide');
+    }
+};
+
+$btn3.popover({trigger: 'manual'})
+    .on('mouseenter', enterShow)
+    .on('mouseleave', exitHide)
+
+
 });

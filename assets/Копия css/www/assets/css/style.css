@@ -1,0 +1,592 @@
+/*
+
+Web-solutions 
+Version 1.0
+By: Dmitriy Parkhomenko, Dmitriy.Parkhomenko@icloud.com
+*/
+body {
+/*  font-family: 'Lora' ;*/
+    
+/*    @import url(http://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic);*/
+    @import url(http://fonts.googleapis.com/css?family=Didact+Gothic&subset=latin,cyrillic);
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 200;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-weight: 300 }
+*,
+*:focus { outline: none !important }
+a { color: #2d2d2d }
+a:hover,
+a:focus {
+  color: #0c86b6;
+  text-decoration: none;
+}
+.hiding { opacity: 0 }
+.showing { opacity: 1 }
+.img-rounded {
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+}
+.btn {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+      -ms-transition: all .2s;
+          transition: all .2s;
+}
+.btn-home {
+  color: #fff;
+  border: 2px solid #fff;   
+/*  background-color: #0093cf;*/
+    opacity: 0.7;
+    border-radius: 2px;
+    padding: 12px 30px;
+}
+.btn-home:hover,
+.btn-home:focus {
+  color: #fff;
+  opacity: 1;
+}
+#price-btn {
+    background: #edc047;
+    color: #fff;
+    padding: 12px 30px;
+
+}
+.btn-price:hover
+.btn-price:focus{
+    color: #fff;
+}
+.btn-green {
+  color: #fff;
+  background-color: #71be3c;
+}
+.btn-green:hover,
+.btn-green:focus {
+  color: #fff;
+  background-color: #2a3940;
+}
+.btn-dark {
+  color: #fff;
+  background-color: #2a3940;
+}
+.btn-dark:hover,
+.btn-dark:focus {
+  color: #fff;
+  background-color: #2a3940;
+}
+.loader {
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.fading-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  background-image: url(../img/fading-line.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#navbar-top { min-height: 51px }
+.navbar-default {
+  margin-bottom: 0;
+  background-color: #fff;
+  border-top: 0;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+.navbar-default .navbar-brand {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #0093cf;
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle { border-color: transparent }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { background-color: transparent }
+.navbar-default .navbar-toggle:hover .icon-bar { background-color: #333 }
+.navbar-default.affix {
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  border-bottom-color: transparent;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+     -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+          box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+}
+.page { overflow: hidden }
+.page .content { padding: 20px 0 }
+.page .content.cover { padding: 240px 0 }
+.page .heading h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.page .border {
+  width: 80px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #71be3c;
+}
+.page .heading p { margin: 20px auto 0 }
+#home {
+  padding: 0;
+  color: #fff;
+  background-image: url(../img/cover/kiev-taxi.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#home h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+#home a { margin: 0 5px }
+#home h3 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+#services {
+
+}
+#services .service i { margin-top: 60px }
+#services .service:hover i { color: #71be3c }
+#work .heading p { margin-bottom: 60px }
+#portfolio { width: 100% }
+#portfolio .filters { margin-bottom: 20px }
+#portfolio .filters li a {
+  color: #999;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#clients {
+  color: #fff;
+  background-color: #2a3940;
+}
+#testimonials .item { margin-bottom: 30px }
+#testimonials .quote {
+  padding: 0 90px;
+  font-size: 16px;
+}
+#testimonials .quote:before {
+  margin-right: 10px;
+  font-family: fontawesome;
+  content: '\f10d';
+}
+#testimonials .client { color: #ccc }
+#testimonials .carousel-indicators li {
+  width: 9px;
+  height: 9px;
+  border-color: #a6a6a6;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-transition: all 0.25s linear;
+     -moz-transition: all 0.25s linear;
+       -o-transition: all 0.25s linear;
+          transition: all 0.25s linear;
+}
+#testimonials .carousel-indicators li:hover,
+#testimonials .carousel-indicators li:focus { border-color: #fff }
+#testimonials .carousel-indicators .active {
+  width: 9px;
+  height: 9px;
+  margin: 1px;
+  background-color: #71be3c;
+  border-color: #fff;
+}
+#testimonials .carousel-indicators {
+  bottom: 0;
+  margin-bottom: 0;
+}
+#testimonials .carousel-control {
+  top: 15%;
+  width: 0%;
+  display: none;
+  font-size: 40px;
+  background-image: none;
+  text-shadow: none;
+}
+#about .content { padding-bottom: 0 }
+#about .teammate { 
+  margin-top: 60px; 
+  margin-bottom: 60px; 
+}
+#about .teammate .bio { padding-top: 10px }
+#about .teammate .profile-photo {
+  overflow: hidden
+}     
+#about .teammate .profile-photo img {
+  -webkit-transition: all .4s ease;
+     -moz-transition: all .4s ease;
+      -ms-transition: all .4s ease;
+       -o-transition: all .4s ease;
+          transition: all .4s ease;
+}
+#about .teammate:hover .profile-photo img,
+#about .teammate:focus .profile-photo img {
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+       -o-transform: scale(1.1);
+          transform: scale(1.1);
+}
+#about .teammate .bio .border {
+  height: 1px;
+  margin: 15px auto;
+}
+#about .teammate .bio ul {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+#about .teammate .bio a { color: #666 }
+#about .teammate .bio a:hover,
+#about .teammate .bio a:focus { color: #222 }
+#about .twitter {
+  padding: 20px 0;
+  background-color: #f5f5f5;
+  border-top: solid 1px #e7e7e7;
+}
+#about .twitter p { margin-bottom: 0 }
+#about .twitter i {
+  margin-bottom: 10px;
+  color: #00aced;
+}
+#contact {
+  background: url(../img/cover/contact.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#contact,
+#contact a,
+#contact a:hover,
+#contact a:focus { color: #fff }
+#contact .heading .border { background-color: #fff }
+#contact a { display: block }
+#contact i { margin: 60px 0 15px }
+#footer {
+  padding: 20px 0 10px 0;
+  color: #fff;
+  background-color: #292929;
+}
+#footer a,
+#footer a:hover,
+#footer a:focus { color: #fff }
+#footer .social { 
+    margin-left: 15px;
+}
+#footer .copyright { 
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+/* Responsive style */
+@media screen and (max-width: 1024px) { 
+  #testimonials .carousel-control { display: block }
+}
+@media screen and (max-width: 991px) { 
+  #portfolio .items li { width: 50% }
+  #testimonials .quote { padding: 0 70px }
+}
+@media (max-width: 767px) { 
+  .page .content.cover { padding: 160px 0 }
+  #testimonials .quote { padding: 0 50px }
+  #testimonials .carousel-control.right { right: 10px }
+}
+@media (max-width: 480px) { 
+  .page .content.cover { padding: 80px 0 }
+  #portfolio .items li { width: 100% }
+  #testimonials .quote { padding: 0 30px }
+  .font_size_price {
+    font-size: 16px;
+   }
+}
+.margin_top_5 {
+    margin-top: 5px;
+}
+.margin_top_10{
+    margin-top: 10px;
+}
+.margin_top_15{
+    margin-top: 15px;
+}
+.margin_top_20 {
+    margin-top: 20px;
+}
+.margin_top_50{
+    margin-top: 50px;
+}
+.margin_top_30{
+    margin-top: 30px;
+}
+.margin_top_fix {
+    margin-top: 0;
+}
+.margin_bottom_10 {
+    margin-bottom: 10px;
+}
+.margin_vertical_30{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.margin_left_6 {
+    margin-left: 6%;
+}
+.margin_fix{
+    margin:0;
+}
+.padding_bottom_0{
+    padding-bottom: 0;
+}
+.paddong_top_10 {
+    padding-top: 10px;
+}
+.padding_right_20{
+    padding-right: 20px;
+}
+.padding_right_30{
+    padding-right: 30px;
+}
+.navbar-toggle {
+    margin-right: 50px;
+}
+.service img{
+    border-radius: 50%;
+}
+.border_fix {
+    border: none;
+}
+.navbar-nav.navbar-right:last-child {
+    margin-right: 20px;
+}
+.padding_fix{
+    padding: 0;
+}
+.menu_tel {
+    padding: 10px 0 0 0;
+}
+.font_size_32 {
+    font-size: 32px;
+}
+.font_size_18 {
+    font-size: 18px;
+}
+.font_size_20 {
+    font-size: 20px;
+    font-weight: 300;
+}
+.font_size_price {
+    font-size: 20px;
+    font-weight: 300;
+}
+.navbar-nav>li .font_size_24{
+    color: #000;
+}
+.padding_gorizontal_15 {
+    padding: 0 4%;
+}
+.padding_price {
+    padding: 0 5%;
+}
+#taxi-phone{
+    display: none;
+}
+.phone:before{
+	 display: block;
+	 float: left;
+	 content: '';
+	 background: url(../img/phone.png) no-repeat;
+	 width: 25px;
+	 height: 25px;
+	 margin-left: 20%;
+	 margin-top: 2px;
+}
+.price_tarif li {
+    padding-left: 50px;
+/*
+    display: inline-block;
+    text-align: center;
+*/
+}
+.price_tarif li:before{
+	 display: block;
+	 float: left;
+	 content: '';
+	 background: url(../img/ok.jpg) no-repeat;
+	 width: 25px;
+	 height: 20px;
+/*    padding-right: 15px;*/
+	 margin-right: 5px;
+/*	 margin-top: 2px;*/
+}
+
+#map-canvas {
+        height: 450px;
+        margin: 0px;
+        padding: 0px;
+      }
+
+.car_price {
+/*    background-color: #fec500;*/
+/*    color: #fff;*/
+/*    background: #f7b926;*/
+    border: 2.5px solid transparent;
+    border-radius: 50px;
+    padding: 15px;
+    border-color:#fec500;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.popover top {
+    width: 500px;
+    height: 500px;
+}
+#logo {
+    max-height: 60px;
+}
+#order_btn {
+    background: #1ad923;
+}
+.price_btn {
+/*    padding: 6px 12px;*/
+    padding-top: 14px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1.3px solid transparent;
+    border-radius: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+    display: block;  
+    margin: 1em auto;
+    height: 50px;
+    width: 180px;
+    border-color: #fec500;
+    background-color: #fff;
+}
+.price_btn:hover {
+    background: #fec500;
+    color: #fff;
+}
+.price_active {
+    background: #fec500;
+    color: #fff;  
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fec500;
+}
+.font_size_20 {
+    font-size: 20px;
+}
+.z_index_9998{
+    z-index: 9998;
+}
+#disqus_thread{
+    max-height: 490px;
+}
+@media (max-width: 767px /* @screen-xs-max */) {
+    .price_tarif li {
+    padding-left: 0px;
+/*
+    display: inline-block;
+    text-align: center;
+*/
+}
+    .font_size_price {
+        font-size: 14px;
+    }
+    h2{
+        font-size:24px;
+    }
+    h3{
+        font-size:20px;
+    }
+#order_btn {
+     width: 68px;
+     height: 68px;
+     margin-top: 4px;
+     border-radius: 10px;
+     margin-left: 5px;
+     padding: 0;
+}
+#order_btn:before {
+     display: block;
+	 float: left;
+	 content: '';
+	 background: url(../img/call.png) no-repeat;
+	 width: 5em;
+	 height: 5em;
+	 margin-left: .3em;
+     margin-top: .2em;
+}
+    .price_btn{
+       padding: 12px 3px; 
+       font-size: 12px;
+       height: 45px;
+       width: 90px;
+    }
+    #logo{
+        height: 100px;
+        width: 280px;
+        margin-top: 10px; 
+    }
+    #logo_wraper{
+        height: 60px;
+    }
+    #about p {
+        font-size:14px;
+    }
+    .car_price{
+        padding: 10px;
+    }
+    #map-canvas{
+        height: 300px;
+    }
+    #slider img{
+        max-width: 320px;
+    }
+    #services .heading h2 {
+    margin-bottom: 0;
+}
+}
