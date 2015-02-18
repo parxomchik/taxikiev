@@ -214,11 +214,23 @@ a:focus {
 .paddong_top_10 {
     padding-top: 10px;
 }
+.paddong_top_15 {
+    padding-top: 15px;
+}
+.paddong_top_5 {
+    padding-top: 5px;
+}
+.paddong_top_7 {
+    padding-top: 7px;
+}
 .padding_right_20{
     padding-right: 20px;
 }
 .padding_right_30{
     padding-right: 30px;
+}
+.padding_right_40{
+    padding-right: 40px;
 }
 .navbar-toggle {
     margin-right: 50px;
@@ -234,6 +246,9 @@ a:focus {
 }
 .padding_fix{
     padding: 0;
+}
+.padding_left_fix{
+    padding-left: 0;
 }
 .menu_tel {
     padding: 10px 0 0 0;
@@ -363,13 +378,33 @@ a:focus {
 #disqus_thread{
     max-height: 490px;
 }
-/*
-.logo_text{
-font-family: Actor ;
-line-height: 1em;
-color: red;
-font-size: 70px;
-text-shadow:0px 0px 0 rgb(-69,-77,-69),1px 1px 0 rgb(-113,-121,-113), 2px 2px 0 rgb(-156,-164,-156),3px 3px 2px rgba(0,0,0,0.45),3px 3px 1px rgba(0,0,0,0.5),0px 0px 2px rgba(0,0,0,.2);
-}
-*/
+    #logo_business,
+    #logo_taxi,
+    #logo_footer_business,
+    #logo_footer_taxi{
+/*font-family: Actor ;*/
+    font-weight: 350;
+    padding-top: 7px;
+    line-height: 1em;
+/*    color: #020202;*/
+    font-size: 50px;
+/*text-shadow:0px 0px 0 rgb(185,222,-22),1px 1px 0 rgb(160,197,-47), 2px 2px 0 rgb(135,172,-72),3px 3px 2px rgba(0,0,0,0.2),3px 3px 1px rgba(0,0,0,0.5),0px 0px 2px rgba(0,0,0,.2);*/
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 
+}
+    #logo_business{
+        color: #020202;
+    }
+    #logo_footer_taxi,
+    #logo_taxi{
+    color: #ffc700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+}
+    #logo_footer_business{
+    color: white;
+}
+
+/*
+#header{
+    max-height: 70px;
+}*/

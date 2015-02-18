@@ -1,0 +1,3 @@
+User-agent: *
+Host: business-taxi.kiev.ua
+Sitemap: http://business-taxi.kiev.ua/sitemap.xml
